@@ -26,4 +26,9 @@ public class BeerRestController {
                                  @RequestBody BeerDto beerDto) {
         return new ResponseEntity(HttpStatus.NO_CONTENT);
     }
+
+    @DeleteMapping("/{beerId}")
+    public ResponseEntity update(@PathVariable UUID beerId) {
+        return new ResponseEntity(HttpStatus.NO_CONTENT);
+    }
 }
