@@ -1,7 +1,10 @@
 package guru.springframework.msscbeerservice.domain;
 
 import guru.springframework.msscbeerservice.model.BeerStyleEnum;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.GenericGenerator;
 import org.hibernate.annotations.UpdateTimestamp;
@@ -12,8 +15,11 @@ import java.math.BigDecimal;
 import java.sql.Timestamp;
 import java.util.UUID;
 
-@Data
 @Entity
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
 public class Beer implements Serializable {
 
     private static final long serialVersionUID = 8396569318236549200L;
