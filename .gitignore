@@ -144,4 +144,4 @@ Desktop.ini
 ######################
 # Git
 ######################
-.github/vars.yml
+.github/secrets.yml
