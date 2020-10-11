@@ -17,4 +17,4 @@ jobs:
         with:
           java-version: 11
       - name: Build and Run Tests
-        run: mvn test --batch-mode -Dmaven.test.failure.ignore=true
+        run: mvn test
