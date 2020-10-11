@@ -18,4 +18,4 @@ jobs:
           java-version: 11
       - uses: actions/checkout@v2
       - name: Build with Maven
-        run: mvn clean test -B package --file pom.xml
+        run: mvn clean test
