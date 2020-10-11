@@ -12,9 +12,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-
-    - name: Run maven test
-      uses: xlui/action-maven-cli/jdk11@master
-      id: test
-      with:
-        lifecycle: 'clean package test'
+    - name: Build with Maven
+      run: mvn -B package --file pom.xml
